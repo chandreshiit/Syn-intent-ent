@@ -1,0 +1,185 @@
+=== Intent confusion (gold -> pred) : top ===
+    DecreaseBrightness -> None                 : 14
+    IncreaseBrightness -> None                 : 12
+        SwitchLightOff -> SwitchLightOn        : 5
+        SwitchLightOff -> DecreaseBrightness   : 4
+    DecreaseBrightness -> SwitchLightOn        : 4
+        SwitchLightOff -> None                 : 4
+    SetLightBrightness -> None                 : 3
+         SwitchLightOn -> None                 : 3
+         SwitchLightOn -> SetLightBrightness   : 2
+         SwitchLightOn -> IncreaseBrightness   : 2
+    SetLightBrightness -> SwitchLightOn        : 2
+    DecreaseBrightness -> SetLightColor        : 2
+    IncreaseBrightness -> SetLightBrightness   : 1
+    DecreaseBrightness -> IncreaseBrightness   : 1
+         SwitchLightOn -> DecreaseBrightness   : 1
+    IncreaseBrightness -> SwitchLightOn        : 1
+
+=== Missed slots (gold present, model missed) : (intent, slot) ===
+  (SetLightBrightness, brightness) : 18
+  (SwitchLightOff, room) : 16
+  (SetLightBrightness, room) : 11
+  (SwitchLightOn, room) : 11
+  (DecreaseBrightness, room) : 10
+  (SetLightColor, room) : 9
+  (IncreaseBrightness, room) : 9
+
+=== Wrong slots (model extracted, not in gold) : (intent, slot) ===
+  (SetLightBrightness, brightness) : 13
+  (SetLightColor, room) : 5
+  (SetLightBrightness, room) : 4
+  (SwitchLightOff, room) : 3
+
+=== Per-intent error breakdown ===
+                  intent  n_total n_intent_err  n_slot_err  slot_recall
+      DecreaseBrightness       59           21          10       0.6000
+      IncreaseBrightness       59           14           9       0.7429
+      SetLightBrightness       59            5          26       0.7129
+           SetLightColor       60            0           9       0.9043
+          SwitchLightOff       60           13          18       0.5897
+           SwitchLightOn       56            8          11       0.7317
+
+=== Openers of error utterances (top 15) ===
+  opener            err  total   err_rate
+  i                  17     40       0.42
+  can                11     20       0.55
+  turn                9     58       0.16
+  set                 6     20       0.30
+  make                6     27       0.22
+  the                 6     12       0.50
+  decrease            5      9       0.56
+  put                 4      7       0.57
+  i'd                 3      7       0.43
+  please              3     34       0.09
+  it's                3      3       1.00
+  change              3     10       0.30
+  adjust              2      6       0.33
+  its                 2      2       1.00
+  kill                2      2       1.00
+
+Contractions in errors: 12 / 112  vs  all: 19 / 353
+Length (words) — errors mean/median: 7.6 / 8
+Length (words) — all    mean/median: 6.8 / 7
+
+=== Sample of error utterances (up to 30) ===
+  [intent:SetLightBrightness->None; missed:[('room', 'vestibule'), ('brightness', 'thirty nine')]]
+    text  : "I'd like the vestibule lighting to be at thirty nine"
+    gold  : room=vestibule,brightness=thirty nine
+    pred  : -
+  [missed:[('brightness', 'two')]; wrong:[('brightness', 'two please')]]
+    text  : 'turn the garden lights to brightness two please'
+    gold  : room=garden,brightness=two
+    pred  : room=garden,brightness=two please
+  [intent:SwitchLightOn->SetLightBrightness; missed:[('room', 'kitchen')]]
+    text  : "I'm in the kitchen can you give me some lights please"
+    gold  : room=kitchen
+    pred  : -
+  [missed:[('room', 'living room')]; wrong:[('room', 'room')]]
+    text  : 'green lights on in living room'
+    gold  : color=green,room=living room
+    pred  : color=green,room=room
+  [intent:IncreaseBrightness->SetLightBrightness]
+    text  : 'Boost the brightness of the lights.'
+    gold  : -
+    pred  : -
+  [missed:[('room', 'laundry room')]]
+    text  : 'Can you turn off the lights for the laundry room?'
+    gold  : room=laundry room
+    pred  : -
+  [wrong:[('room', 'room')]]
+    text  : 'Turn off the lights in this room.'
+    gold  : -
+    pred  : room=room
+  [intent:SwitchLightOff->DecreaseBrightness; missed:[('room', 'entrance')]]
+    text  : 'Decrease the light intensity in the entrance to zero'
+    gold  : room=entrance
+    pred  : -
+  [intent:DecreaseBrightness->None]
+    text  : "Adjust the lights so it's less bright"
+    gold  : -
+    pred  : -
+  [intent:DecreaseBrightness->SwitchLightOn; missed:[('room', 'small meeting room')]]
+    text  : 'decrease the light in the small meeting room'
+    gold  : room=small meeting room
+    pred  : -
+  [intent:SetLightBrightness->None; missed:[('brightness', 'twelve')]]
+    text  : 'Be sure the light intensity is set to twelve percent'
+    gold  : brightness=twelve
+    pred  : -
+  [intent:IncreaseBrightness->None; missed:[('room', 'cellar')]]
+    text  : 'Find the bulbs for the cellar and turn them up'
+    gold  : room=cellar
+    pred  : -
+  [intent:IncreaseBrightness->None]
+    text  : 'I need more light here'
+    gold  : -
+    pred  : -
+  [missed:[('room', 'living room')]; wrong:[('room', 'room')]]
+    text  : 'Set living room bright level to twenty two'
+    gold  : room=living room,brightness=twenty two
+    pred  : room=room,brightness=twenty two
+  [intent:SwitchLightOff->None]
+    text  : "I'd like the lights to be shutdown"
+    gold  : -
+    pred  : -
+  [intent:IncreaseBrightness->None; missed:[('room', 'cubicle')]]
+    text  : 'I need it to be brighter in the cubicle'
+    gold  : room=cubicle
+    pred  : -
+  [missed:[('room', 'bathroom')]]
+    text  : 'turn bathroom lights up'
+    gold  : room=bathroom
+    pred  : -
+  [intent:SwitchLightOn->IncreaseBrightness; missed:[('room', 'meeting room')]]
+    text  : 'i need to brighten up the meeting room'
+    gold  : room=meeting room
+    pred  : -
+  [missed:[('brightness', 'twenty')]; wrong:[('brightness', 'twenty please')]]
+    text  : 'Set brightness to twenty please.'
+    gold  : brightness=twenty
+    pred  : brightness=twenty please
+  [missed:[('room', 'living room')]; wrong:[('room', 'room')]]
+    text  : 'living room lights off'
+    gold  : room=living room
+    pred  : room=room
+  [missed:[('room', 'lounge')]]
+    text  : 'lounge lights on please'
+    gold  : room=lounge
+    pred  : -
+  [missed:[('brightness', 'twelve')]; wrong:[('brightness', 'twelve percent')]]
+    text  : 'I want the vestibule to shine at twelve percent'
+    gold  : room=vestibule,brightness=twelve
+    pred  : room=vestibule,brightness=twelve percent
+  [intent:SwitchLightOff->None]
+    text  : 'Decrease the light intensity to zero'
+    gold  : -
+    pred  : -
+  [intent:DecreaseBrightness->IncreaseBrightness; missed:[('room', 'bed room')]]
+    text  : 'Make the lights in the bed room less bright'
+    gold  : room=bed room
+    pred  : -
+  [intent:DecreaseBrightness->None]
+    text  : 'the light is too bright so turn it down'
+    gold  : -
+    pred  : -
+  [wrong:[('room', 'room')]]
+    text  : 'Please turn off the lights in this room.'
+    gold  : -
+    pred  : room=room
+  [intent:IncreaseBrightness->None]
+    text  : 'Turn the lights to a higher setting'
+    gold  : -
+    pred  : -
+  [intent:DecreaseBrightness->None]
+    text  : 'its pretty bright in here, is there a possibility you can turn the lights down'
+    gold  : -
+    pred  : -
+  [missed:[('brightness', 'fifty.')]; wrong:[('brightness', 'fifty')]]
+    text  : 'I want the brightness of the lights in the laundry room to be fifty.'
+    gold  : room=laundry room,brightness=fifty.
+    pred  : room=laundry room,brightness=fifty
+  [intent:SwitchLightOff->SwitchLightOn; missed:[('room', 'cubicle')]]
+    text  : 'End the lights from shining in the cubicle'
+    gold  : room=cubicle
+    pred  : -

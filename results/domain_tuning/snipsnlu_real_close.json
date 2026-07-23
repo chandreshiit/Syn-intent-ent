@@ -1,0 +1,774 @@
+{
+  "tag": "real_close",
+  "dataset": "data/snips_real_close/dataset.json",
+  "n_folds": 5,
+  "seed": 42,
+  "per_fold": [
+    {
+      "fold": 0,
+      "n_train": 1409,
+      "n_test": 356,
+      "n_eval": 356,
+      "train_secs": 10.769455194473267,
+      "intent_accuracy": 0.9691011235955056,
+      "intent_micro_p": 0.9745762711864406,
+      "intent_micro_r": 0.9691011235955056,
+      "intent_micro_f1": 0.9718309859154929,
+      "intent_per_intent": {
+        "DecreaseBrightness": {
+          "precision": 0.967741935483871,
+          "recall": 1.0,
+          "f1": 0.9836065573770492,
+          "tp": 60,
+          "fp": 2,
+          "fn": 0
+        },
+        "IncreaseBrightness": {
+          "precision": 0.9344262295081968,
+          "recall": 0.95,
+          "f1": 0.9421487603305784,
+          "tp": 57,
+          "fp": 4,
+          "fn": 3
+        },
+        "SetLightBrightness": {
+          "precision": 1.0,
+          "recall": 0.9666666666666667,
+          "f1": 0.983050847457627,
+          "tp": 58,
+          "fp": 0,
+          "fn": 2
+        },
+        "SetLightColor": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 60,
+          "fp": 0,
+          "fn": 0
+        },
+        "SwitchLightOff": {
+          "precision": 1.0,
+          "recall": 0.9333333333333333,
+          "f1": 0.9655172413793104,
+          "tp": 56,
+          "fp": 0,
+          "fn": 4
+        },
+        "SwitchLightOn": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9642857142857143,
+          "f1": 0.9557522123893805,
+          "tp": 54,
+          "fp": 3,
+          "fn": 2
+        }
+      },
+      "slot_micro_p": 0.9809523809523809,
+      "slot_micro_r": 0.9596273291925466,
+      "slot_micro_f1": 0.9701726844583988,
+      "slot_per_intent": {
+        "SetLightColor::room": {
+          "precision": 0.9354838709677419,
+          "recall": 0.9666666666666667,
+          "f1": 0.9508196721311476,
+          "tp": 29,
+          "fp": 2,
+          "fn": 1
+        },
+        "SetLightBrightness::room": {
+          "precision": 1.0,
+          "recall": 0.9534883720930233,
+          "f1": 0.9761904761904763,
+          "tp": 41,
+          "fp": 0,
+          "fn": 2
+        },
+        "SwitchLightOn::room": {
+          "precision": 1.0,
+          "recall": 0.9705882352941176,
+          "f1": 0.9850746268656716,
+          "tp": 33,
+          "fp": 0,
+          "fn": 1
+        },
+        "IncreaseBrightness::room": {
+          "precision": 0.9655172413793104,
+          "recall": 0.9333333333333333,
+          "f1": 0.9491525423728815,
+          "tp": 28,
+          "fp": 1,
+          "fn": 2
+        },
+        "DecreaseBrightness::room": {
+          "precision": 0.9655172413793104,
+          "recall": 1.0,
+          "f1": 0.9824561403508771,
+          "tp": 28,
+          "fp": 1,
+          "fn": 0
+        },
+        "SetLightColor::color": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 60,
+          "fp": 0,
+          "fn": 0
+        },
+        "SetLightBrightness::brightness": {
+          "precision": 0.9655172413793104,
+          "recall": 0.9333333333333333,
+          "f1": 0.9491525423728815,
+          "tp": 56,
+          "fp": 2,
+          "fn": 4
+        },
+        "SwitchLightOff::room": {
+          "precision": 1.0,
+          "recall": 0.918918918918919,
+          "f1": 0.9577464788732395,
+          "tp": 34,
+          "fp": 0,
+          "fn": 3
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "n_train": 1412,
+      "n_test": 353,
+      "n_eval": 353,
+      "train_secs": 4.248265981674194,
+      "intent_accuracy": 0.9745042492917847,
+      "intent_micro_p": 0.98005698005698,
+      "intent_micro_r": 0.9745042492917847,
+      "intent_micro_f1": 0.9772727272727273,
+      "intent_per_intent": {
+        "DecreaseBrightness": {
+          "precision": 0.9661016949152542,
+          "recall": 0.9661016949152542,
+          "f1": 0.9661016949152542,
+          "tp": 57,
+          "fp": 2,
+          "fn": 2
+        },
+        "IncreaseBrightness": {
+          "precision": 0.9666666666666667,
+          "recall": 0.9830508474576272,
+          "f1": 0.9747899159663865,
+          "tp": 58,
+          "fp": 2,
+          "fn": 1
+        },
+        "SetLightBrightness": {
+          "precision": 0.9833333333333333,
+          "recall": 1.0,
+          "f1": 0.9915966386554621,
+          "tp": 59,
+          "fp": 1,
+          "fn": 0
+        },
+        "SetLightColor": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 60,
+          "fp": 0,
+          "fn": 0
+        },
+        "SwitchLightOff": {
+          "precision": 1.0,
+          "recall": 0.9333333333333333,
+          "f1": 0.9655172413793104,
+          "tp": 56,
+          "fp": 0,
+          "fn": 4
+        },
+        "SwitchLightOn": {
+          "precision": 0.9642857142857143,
+          "recall": 0.9642857142857143,
+          "f1": 0.9642857142857143,
+          "tp": 54,
+          "fp": 2,
+          "fn": 2
+        }
+      },
+      "slot_micro_p": 0.9908536585365854,
+      "slot_micro_r": 0.9848484848484849,
+      "slot_micro_f1": 0.9878419452887538,
+      "slot_per_intent": {
+        "SetLightColor::room": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 32,
+          "fp": 0,
+          "fn": 0
+        },
+        "SetLightBrightness::room": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 45,
+          "fp": 0,
+          "fn": 0
+        },
+        "SwitchLightOn::room": {
+          "precision": 1.0,
+          "recall": 0.9714285714285714,
+          "f1": 0.9855072463768115,
+          "tp": 34,
+          "fp": 0,
+          "fn": 1
+        },
+        "IncreaseBrightness::room": {
+          "precision": 0.972972972972973,
+          "recall": 1.0,
+          "f1": 0.9863013698630138,
+          "tp": 36,
+          "fp": 1,
+          "fn": 0
+        },
+        "DecreaseBrightness::room": {
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523,
+          "tp": 30,
+          "fp": 0,
+          "fn": 3
+        },
+        "SetLightColor::color": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 60,
+          "fp": 0,
+          "fn": 0
+        },
+        "SetLightBrightness::brightness": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 59,
+          "fp": 0,
+          "fn": 0
+        },
+        "SwitchLightOff::room": {
+          "precision": 0.9354838709677419,
+          "recall": 0.9666666666666667,
+          "f1": 0.9508196721311476,
+          "tp": 29,
+          "fp": 2,
+          "fn": 1
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "n_train": 1412,
+      "n_test": 353,
+      "n_eval": 353,
+      "train_secs": 4.478353977203369,
+      "intent_accuracy": 0.9745042492917847,
+      "intent_micro_p": 0.9745042492917847,
+      "intent_micro_r": 0.9745042492917847,
+      "intent_micro_f1": 0.9745042492917847,
+      "intent_per_intent": {
+        "DecreaseBrightness": {
+          "precision": 0.9365079365079365,
+          "recall": 1.0,
+          "f1": 0.9672131147540983,
+          "tp": 59,
+          "fp": 4,
+          "fn": 0
+        },
+        "IncreaseBrightness": {
+          "precision": 0.9833333333333333,
+          "recall": 1.0,
+          "f1": 0.9915966386554621,
+          "tp": 59,
+          "fp": 1,
+          "fn": 0
+        },
+        "SetLightBrightness": {
+          "precision": 0.9833333333333333,
+          "recall": 1.0,
+          "f1": 0.9915966386554621,
+          "tp": 59,
+          "fp": 1,
+          "fn": 0
+        },
+        "SetLightColor": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 60,
+          "fp": 0,
+          "fn": 0
+        },
+        "SwitchLightOff": {
+          "precision": 1.0,
+          "recall": 0.85,
+          "f1": 0.9189189189189189,
+          "tp": 51,
+          "fp": 0,
+          "fn": 9
+        },
+        "SwitchLightOn": {
+          "precision": 0.9491525423728814,
+          "recall": 1.0,
+          "f1": 0.9739130434782608,
+          "tp": 56,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "slot_micro_p": 0.9844236760124611,
+      "slot_micro_r": 0.9723076923076923,
+      "slot_micro_f1": 0.978328173374613,
+      "slot_per_intent": {
+        "SetLightColor::room": {
+          "precision": 0.9375,
+          "recall": 0.967741935483871,
+          "f1": 0.9523809523809523,
+          "tp": 30,
+          "fp": 2,
+          "fn": 1
+        },
+        "SetLightBrightness::room": {
+          "precision": 0.9772727272727273,
+          "recall": 0.9772727272727273,
+          "f1": 0.9772727272727273,
+          "tp": 43,
+          "fp": 1,
+          "fn": 1
+        },
+        "SwitchLightOn::room": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 32,
+          "fp": 0,
+          "fn": 0
+        },
+        "IncreaseBrightness::room": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 37,
+          "fp": 0,
+          "fn": 0
+        },
+        "DecreaseBrightness::room": {
+          "precision": 1.0,
+          "recall": 0.9583333333333334,
+          "f1": 0.9787234042553191,
+          "tp": 23,
+          "fp": 0,
+          "fn": 1
+        },
+        "SetLightColor::color": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 60,
+          "fp": 0,
+          "fn": 0
+        },
+        "SetLightBrightness::brightness": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 59,
+          "fp": 0,
+          "fn": 0
+        },
+        "SwitchLightOff::room": {
+          "precision": 0.9411764705882353,
+          "recall": 0.8421052631578947,
+          "f1": 0.8888888888888888,
+          "tp": 32,
+          "fp": 2,
+          "fn": 6
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "n_train": 1413,
+      "n_test": 352,
+      "n_eval": 352,
+      "train_secs": 4.62787127494812,
+      "intent_accuracy": 0.9573863636363636,
+      "intent_micro_p": 0.9573863636363636,
+      "intent_micro_r": 0.9573863636363636,
+      "intent_micro_f1": 0.9573863636363636,
+      "intent_per_intent": {
+        "DecreaseBrightness": {
+          "precision": 0.8888888888888888,
+          "recall": 0.9491525423728814,
+          "f1": 0.9180327868852458,
+          "tp": 56,
+          "fp": 7,
+          "fn": 3
+        },
+        "IncreaseBrightness": {
+          "precision": 0.9636363636363636,
+          "recall": 0.8983050847457628,
+          "f1": 0.9298245614035089,
+          "tp": 53,
+          "fp": 2,
+          "fn": 6
+        },
+        "SetLightBrightness": {
+          "precision": 0.9666666666666667,
+          "recall": 0.9830508474576272,
+          "f1": 0.9747899159663865,
+          "tp": 58,
+          "fp": 2,
+          "fn": 1
+        },
+        "SetLightColor": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 60,
+          "fp": 0,
+          "fn": 0
+        },
+        "SwitchLightOff": {
+          "precision": 0.9821428571428571,
+          "recall": 0.9166666666666666,
+          "f1": 0.9482758620689654,
+          "tp": 55,
+          "fp": 1,
+          "fn": 5
+        },
+        "SwitchLightOn": {
+          "precision": 0.9482758620689655,
+          "recall": 1.0,
+          "f1": 0.9734513274336283,
+          "tp": 55,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "slot_micro_p": 0.9867549668874173,
+      "slot_micro_r": 0.9644012944983819,
+      "slot_micro_f1": 0.9754500818330606,
+      "slot_per_intent": {
+        "SetLightColor::room": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 27,
+          "fp": 0,
+          "fn": 0
+        },
+        "SetLightBrightness::room": {
+          "precision": 1.0,
+          "recall": 0.975609756097561,
+          "f1": 0.9876543209876543,
+          "tp": 40,
+          "fp": 0,
+          "fn": 1
+        },
+        "SwitchLightOn::room": {
+          "precision": 0.9696969696969697,
+          "recall": 0.9696969696969697,
+          "f1": 0.9696969696969697,
+          "tp": 32,
+          "fp": 1,
+          "fn": 1
+        },
+        "IncreaseBrightness::room": {
+          "precision": 0.9642857142857143,
+          "recall": 0.9310344827586207,
+          "f1": 0.9473684210526316,
+          "tp": 27,
+          "fp": 1,
+          "fn": 2
+        },
+        "DecreaseBrightness::room": {
+          "precision": 1.0,
+          "recall": 0.9565217391304348,
+          "f1": 0.9777777777777777,
+          "tp": 22,
+          "fp": 0,
+          "fn": 1
+        },
+        "SetLightColor::color": {
+          "precision": 0.9833333333333333,
+          "recall": 0.9833333333333333,
+          "f1": 0.9833333333333333,
+          "tp": 59,
+          "fp": 1,
+          "fn": 1
+        },
+        "SetLightBrightness::brightness": {
+          "precision": 0.9827586206896551,
+          "recall": 0.9661016949152542,
+          "f1": 0.9743589743589743,
+          "tp": 57,
+          "fp": 1,
+          "fn": 2
+        },
+        "SwitchLightOff::room": {
+          "precision": 1.0,
+          "recall": 0.918918918918919,
+          "f1": 0.9577464788732395,
+          "tp": 34,
+          "fp": 0,
+          "fn": 3
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "n_train": 1414,
+      "n_test": 351,
+      "n_eval": 351,
+      "train_secs": 4.154270172119141,
+      "intent_accuracy": 0.9601139601139601,
+      "intent_micro_p": 0.9628571428571429,
+      "intent_micro_r": 0.9601139601139601,
+      "intent_micro_f1": 0.9614835948644793,
+      "intent_per_intent": {
+        "DecreaseBrightness": {
+          "precision": 0.9516129032258065,
+          "recall": 1.0,
+          "f1": 0.9752066115702479,
+          "tp": 59,
+          "fp": 3,
+          "fn": 0
+        },
+        "IncreaseBrightness": {
+          "precision": 0.9322033898305084,
+          "recall": 0.9322033898305084,
+          "f1": 0.9322033898305084,
+          "tp": 55,
+          "fp": 4,
+          "fn": 4
+        },
+        "SetLightBrightness": {
+          "precision": 0.9827586206896551,
+          "recall": 0.9661016949152542,
+          "f1": 0.9743589743589743,
+          "tp": 57,
+          "fp": 1,
+          "fn": 2
+        },
+        "SetLightColor": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 60,
+          "fp": 0,
+          "fn": 0
+        },
+        "SwitchLightOff": {
+          "precision": 1.0,
+          "recall": 0.9152542372881356,
+          "f1": 0.9557522123893806,
+          "tp": 54,
+          "fp": 0,
+          "fn": 5
+        },
+        "SwitchLightOn": {
+          "precision": 0.9122807017543859,
+          "recall": 0.9454545454545454,
+          "f1": 0.9285714285714285,
+          "tp": 52,
+          "fp": 5,
+          "fn": 3
+        }
+      },
+      "slot_micro_p": 0.9784615384615385,
+      "slot_micro_r": 0.9492537313432836,
+      "slot_micro_f1": 0.9636363636363636,
+      "slot_per_intent": {
+        "SetLightColor::room": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 27,
+          "fp": 0,
+          "fn": 0
+        },
+        "SetLightBrightness::room": {
+          "precision": 1.0,
+          "recall": 0.9767441860465116,
+          "f1": 0.988235294117647,
+          "tp": 42,
+          "fp": 0,
+          "fn": 1
+        },
+        "SwitchLightOn::room": {
+          "precision": 1.0,
+          "recall": 0.9166666666666666,
+          "f1": 0.9565217391304348,
+          "tp": 33,
+          "fp": 0,
+          "fn": 3
+        },
+        "IncreaseBrightness::room": {
+          "precision": 0.9696969696969697,
+          "recall": 0.8888888888888888,
+          "f1": 0.927536231884058,
+          "tp": 32,
+          "fp": 1,
+          "fn": 4
+        },
+        "DecreaseBrightness::room": {
+          "precision": 0.967741935483871,
+          "recall": 0.967741935483871,
+          "f1": 0.967741935483871,
+          "tp": 30,
+          "fp": 1,
+          "fn": 1
+        },
+        "SetLightColor::color": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 60,
+          "fp": 0,
+          "fn": 0
+        },
+        "SetLightBrightness::brightness": {
+          "precision": 0.9649122807017544,
+          "recall": 0.9322033898305084,
+          "f1": 0.9482758620689654,
+          "tp": 55,
+          "fp": 2,
+          "fn": 4
+        },
+        "SwitchLightOff::room": {
+          "precision": 0.9285714285714286,
+          "recall": 0.9069767441860465,
+          "f1": 0.9176470588235294,
+          "tp": 39,
+          "fp": 3,
+          "fn": 4
+        }
+      }
+    }
+  ],
+  "summary": {
+    "intent_accuracy": {
+      "mean": 0.9671219891858798,
+      "std": 0.007166692094224477
+    },
+    "intent_micro_p": {
+      "mean": 0.9698762014057424,
+      "std": 0.008395486496189463
+    },
+    "intent_micro_r": {
+      "mean": 0.9671219891858798,
+      "std": 0.007166692094224477
+    },
+    "intent_micro_f1": {
+      "mean": 0.9684955841961695,
+      "std": 0.007705192759185796
+    },
+    "slot_micro_p": {
+      "mean": 0.9842892441700766,
+      "std": 0.004342492518663016
+    },
+    "slot_micro_r": {
+      "mean": 0.9660877064380778,
+      "std": 0.01198847953378307
+    },
+    "slot_micro_f1": {
+      "mean": 0.975085849718238,
+      "std": 0.0081067037239536
+    }
+  },
+  "intent_per_intent_mean": {
+    "DecreaseBrightness": {
+      "precision": {
+        "mean": 0.9421706718043514,
+        "std": 0.028937014667052778
+      },
+      "recall": {
+        "mean": 0.9830508474576272,
+        "std": 0.021439170577412736
+      },
+      "f1": {
+        "mean": 0.962032153100379,
+        "std": 0.02288392028233465
+      }
+    },
+    "IncreaseBrightness": {
+      "precision": {
+        "mean": 0.9560531965950138,
+        "std": 0.019752949237411648
+      },
+      "recall": {
+        "mean": 0.9527118644067797,
+        "std": 0.03617919587699862
+      },
+      "f1": {
+        "mean": 0.9541126532372889,
+        "std": 0.02468060095797917
+      }
+    },
+    "SetLightBrightness": {
+      "precision": {
+        "mean": 0.9832183908045977,
+        "std": 0.010543431995833217
+      },
+      "recall": {
+        "mean": 0.9831638418079096,
+        "std": 0.01503461909919087
+      },
+      "f1": {
+        "mean": 0.9830786030187825,
+        "std": 0.007613788670618155
+      }
+    },
+    "SetLightColor": {
+      "precision": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "SwitchLightOff": {
+      "precision": {
+        "mean": 0.9964285714285714,
+        "std": 0.007142857142857162
+      },
+      "recall": {
+        "mean": 0.9097175141242938,
+        "std": 0.03085625172137246
+      },
+      "f1": {
+        "mean": 0.9507962952271771,
+        "std": 0.01720751771610278
+      }
+    },
+    "SwitchLightOn": {
+      "precision": {
+        "mean": 0.9442726483069157,
+        "std": 0.01716642274618971
+      },
+      "recall": {
+        "mean": 0.9748051948051948,
+        "std": 0.02169025576480185
+      },
+      "f1": {
+        "mean": 0.9591947452316825,
+        "std": 0.01670589692838846
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "dataset": "skit_s2i",
+  "n_utterances": 1400,
+  "model": "llama3.2",
+  "intent_accuracy": 0.9328571428571428,
+  "intent_correct": 1306,
+  "parse_failures": 0
+}

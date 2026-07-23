@@ -1,0 +1,4 @@
+dataset,domain,synth_count,orig_count,exact_match_pct,exact_match_count,jaccard_1,jaccard_2,jaccard_3,jaccard_4,jaccard_5,rouge_l_mean,rouge_l_p50,rouge_l_p90,rouge_l_p99,rouge_l_max,bleu_4_mean,bleu_4_p50,bleu_4_p90,bleu_4_p99,bleu_4_max
+snips,Smart-lights,500,1765,3.80,19,0.2557,0.1081,0.0857,0.0623,0.0384,0.8001,0.8000,0.9091,1.0000,1.0000,48.38,44.83,70.14,84.09,100.00
+skit_s2i,Banking,500,11845,1.20,6,0.3761,0.1750,0.1061,0.0672,0.0441,0.6011,0.6000,0.8235,1.0000,1.0000,26.03,20.16,51.33,100.00,100.00
+multiatis,Airline travel,500,6382,0.40,2,0.2973,0.0985,0.0384,0.0175,0.0076,0.5931,0.5882,0.7368,0.8571,1.0000,28.18,24.45,47.49,75.98,100.00

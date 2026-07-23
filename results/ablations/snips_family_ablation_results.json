@@ -1,0 +1,49 @@
+{
+  "protocol": "synth-only Snips NLU, 5 runs each, real test=353, seed=42 split, equal ~60-utt budget per family",
+  "baseline_v2": {
+    "intent_mean": 0.82774,
+    "slot_mean": 0.8408599999999999
+  },
+  "families": {
+    "colloquial": {
+      "n_utts_added": 60,
+      "intent_mean": 0.85326,
+      "intent_std": 0.002095328136593426,
+      "slot_mean": 0.85814,
+      "slot_std": 0.005943601601722654,
+      "delta_intent_pp": 2.5519999999999987,
+      "delta_intent_per_utt": 0.04253333333333331,
+      "delta_slot_pp": 1.7280000000000073
+    },
+    "indirect": {
+      "n_utts_added": 52,
+      "intent_mean": 0.8272,
+      "intent_std": 0.0056600353355787435,
+      "slot_mean": 0.84648,
+      "slot_std": 0.007087002187102795,
+      "delta_intent_pp": -0.053999999999998494,
+      "delta_intent_per_utt": -0.0010384615384615094,
+      "delta_slot_pp": 0.5620000000000069
+    },
+    "explanatory": {
+      "n_utts_added": 60,
+      "intent_mean": 0.87138,
+      "intent_std": 0.0022400000000000198,
+      "slot_mean": 0.85742,
+      "slot_std": 0.010105721151902032,
+      "delta_intent_pp": 4.364000000000001,
+      "delta_intent_per_utt": 0.07273333333333334,
+      "delta_slot_pp": 1.656000000000002
+    },
+    "first_person": {
+      "n_utts_added": 48,
+      "intent_mean": 0.87368,
+      "intent_std": 0.005812194077970894,
+      "slot_mean": 0.8533,
+      "slot_std": 0.008311678530838416,
+      "delta_intent_pp": 4.593999999999998,
+      "delta_intent_per_utt": 0.09570833333333328,
+      "delta_slot_pp": 1.2440000000000007
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "real_test_total": 1400,
+  "overlap_with_synth_train": 792,
+  "novel_in_real_test": 608,
+  "novel_unique": 63,
+  "sample_novel": [
+    "Pending amount on credit card",
+    "I cannot use my credit card",
+    "I want to change the limit of my contactless transaction on my (credit/debit) card",
+    "What is my account balance",
+    "I want to block my UPI",
+    "How can I activate my credit card",
+    "What is my account balance",
+    "I want to block my credit card",
+    "My card is lost",
+    "How to activate credit card",
+    "Debit card issue",
+    "Debit card issue",
+    "I want to change the limit of my e-statement on my (credit/debit) card",
+    "Last <numeric> transaction details",
+    "Unauthorised transaction"
+  ]
+}

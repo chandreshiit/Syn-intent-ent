@@ -1,0 +1,14 @@
+{
+  "dataset": "multiatis",
+  "n_utterances": 1022,
+  "model": "llama3.2",
+  "intent_accuracy": 0.47847358121330724,
+  "intent_correct": 489,
+  "parse_failures": 0,
+  "slot_f1": 0.4030832010881886,
+  "slot_precision": 0.3427139552814187,
+  "slot_recall": 0.4892680242157402,
+  "slot_tp": 889,
+  "slot_fp": 1705,
+  "slot_fn": 928
+}

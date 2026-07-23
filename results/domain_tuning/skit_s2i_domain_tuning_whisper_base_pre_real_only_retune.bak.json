@@ -1,0 +1,55 @@
+{
+  "per_ratio": [
+    {
+      "ratio": 0.0,
+      "real_added": 0,
+      "synth_used": 10528,
+      "n_train": 10528,
+      "n_test": 1400,
+      "test_intent_acc": 0.7621428571428571,
+      "train_secs": 55196.98897457123
+    },
+    {
+      "ratio": 0.25,
+      "real_added": 2612,
+      "synth_used": 10528,
+      "n_train": 13140,
+      "n_test": 1400,
+      "test_intent_acc": 0.8528571428571429,
+      "train_secs": 14972.84769654274
+    },
+    {
+      "ratio": 1.0,
+      "real_added": 10445,
+      "synth_used": 10528,
+      "n_train": 20973,
+      "n_test": 1400,
+      "test_intent_acc": 0.9321428571428572,
+      "train_secs": 12884.236921072006
+    }
+  ],
+  "real_only_baseline": {
+    "ratio": "real_only",
+    "real_added": 10445,
+    "synth_used": 0,
+    "n_train": 10445,
+    "n_test": 1400,
+    "test_intent_acc": 0.8657142857142858,
+    "train_secs": 6523.220482587814
+  },
+  "config": {
+    "ratios": [
+      0.0,
+      0.25,
+      1.0
+    ],
+    "epochs": 10,
+    "batch_size": 16,
+    "lr": 0.0001,
+    "seed": 42,
+    "backbone": "base.en",
+    "skip_real_only": false,
+    "out_name": "skit_s2i_domain_tuning_whisper_base.json",
+    "resume": true
+  }
+}

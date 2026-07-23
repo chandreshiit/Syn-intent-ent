@@ -1,0 +1,75 @@
+{
+  "per_ratio": [
+    {
+      "ratio": 0.0,
+      "real_added": 0,
+      "synth_used": 1765,
+      "n_train": 1589,
+      "n_dev": 176,
+      "n_test": 353,
+      "intent_acc": 0.9121813031161473,
+      "slot_f1": 0.7237813884785821,
+      "train_secs": 98.89078330993652
+    },
+    {
+      "ratio": 0.05,
+      "real_added": 71,
+      "synth_used": 1765,
+      "n_train": 1652,
+      "n_dev": 184,
+      "n_test": 353,
+      "intent_acc": 0.9178470254957507,
+      "slot_f1": 0.8005908419497784,
+      "train_secs": 126.84884214401245
+    },
+    {
+      "ratio": 0.1,
+      "real_added": 142,
+      "synth_used": 1765,
+      "n_train": 1716,
+      "n_dev": 191,
+      "n_test": 353,
+      "intent_acc": 0.9206798866855525,
+      "slot_f1": 0.8175182481751825,
+      "train_secs": 117.84295606613159
+    },
+    {
+      "ratio": 0.25,
+      "real_added": 353,
+      "synth_used": 1765,
+      "n_train": 1906,
+      "n_dev": 212,
+      "n_test": 353,
+      "intent_acc": 0.9716713881019831,
+      "slot_f1": 0.8647845468053492,
+      "train_secs": 126.61981701850891
+    },
+    {
+      "ratio": 0.5,
+      "real_added": 705,
+      "synth_used": 1765,
+      "n_train": 2223,
+      "n_dev": 247,
+      "n_test": 353,
+      "intent_acc": 0.9773371104815864,
+      "slot_f1": 0.8772455089820359,
+      "train_secs": 146.94572186470032
+    },
+    {
+      "ratio": 1.0,
+      "real_added": 1412,
+      "synth_used": 1765,
+      "n_train": 2859,
+      "n_dev": 318,
+      "n_test": 353,
+      "intent_acc": 0.9886685552407932,
+      "slot_f1": 0.9697885196374623,
+      "train_secs": 194.00135827064514
+    }
+  ],
+  "config": {
+    "seed": 42,
+    "epochs": 20,
+    "test_n": 353
+  }
+}

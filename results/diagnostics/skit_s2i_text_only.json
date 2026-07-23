@@ -1,0 +1,113 @@
+{
+  "backbone": "bert-base-uncased",
+  "epochs": 5,
+  "train_size": 10710,
+  "dev_size": 1190,
+  "test_split": "test",
+  "test_size": 1400,
+  "best_dev_acc": 0.9966386554621849,
+  "test_intent_acc": 1.0,
+  "test_overlap_size": 792,
+  "test_overlap_acc": 1.0,
+  "test_novel_size": 608,
+  "test_novel_acc": 1.0,
+  "per_class": {
+    "branch_address": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "activate_card": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "past_transactions": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "dispatch_status": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "outstanding_balance": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "card_issue": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "ifsc_code": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "generate_pin": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "unauthorised_transaction": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "loan_query": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "balance_enquiry": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "change_limit": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "block": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    },
+    "lost": {
+      "acc": 1.0,
+      "tp": 100,
+      "n": 100
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_acc": 0.9580765639589169,
+      "dev_acc": 0.9966386554621849
+    },
+    {
+      "epoch": 2,
+      "train_acc": 0.9986928104575163,
+      "dev_acc": 0.9966386554621849
+    },
+    {
+      "epoch": 3,
+      "train_acc": 0.9986928104575163,
+      "dev_acc": 0.9966386554621849
+    },
+    {
+      "epoch": 4,
+      "train_acc": 0.9989729225023343,
+      "dev_acc": 0.9966386554621849
+    },
+    {
+      "epoch": 5,
+      "train_acc": 0.9992530345471522,
+      "dev_acc": 0.9932773109243698
+    }
+  ]
+}

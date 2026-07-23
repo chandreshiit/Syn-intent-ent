@@ -1,0 +1,183 @@
+{
+  "per_language": [
+    {
+      "lang": "en",
+      "n_train": 4486,
+      "n_dev": 489,
+      "n_test": 892,
+      "intents": 18,
+      "slot_labels": 82,
+      "bert": {
+        "intent_acc": 1.0,
+        "slot_f1": 0.9053,
+        "train_secs": 284.8
+      },
+      "lstm": {
+        "intent_acc": 1.0,
+        "slot_f1": 0.9855,
+        "train_secs": 8.8
+      }
+    },
+    {
+      "lang": "es",
+      "n_train": 4486,
+      "n_dev": 489,
+      "n_test": 892,
+      "intents": 18,
+      "slot_labels": 82,
+      "bert": {
+        "intent_acc": 0.9955,
+        "slot_f1": 0.8221,
+        "train_secs": 328.9
+      },
+      "lstm": {
+        "intent_acc": 0.9899,
+        "slot_f1": 0.8348,
+        "train_secs": 10.5
+      }
+    },
+    {
+      "lang": "pt",
+      "n_train": 4486,
+      "n_dev": 489,
+      "n_test": 892,
+      "intents": 18,
+      "slot_labels": 216,
+      "bert": {
+        "intent_acc": 0.9943946188340808,
+        "slot_f1": 0.8442211055276382,
+        "train_secs": 347.51230120658875
+      },
+      "lstm": {
+        "intent_acc": 0.9854260089686099,
+        "slot_f1": 0.8631254132686798,
+        "train_secs": 9.084717988967896
+      }
+    },
+    {
+      "lang": "de",
+      "n_train": 4486,
+      "n_dev": 489,
+      "n_test": 892,
+      "intents": 18,
+      "slot_labels": 226,
+      "bert": {
+        "intent_acc": 0.9865470852017937,
+        "slot_f1": 0.8620063549704947,
+        "train_secs": 407.21341943740845
+      },
+      "lstm": {
+        "intent_acc": 0.9630044843049327,
+        "slot_f1": 0.8583589501064082,
+        "train_secs": 8.465028524398804
+      }
+    },
+    {
+      "lang": "fr",
+      "n_train": 4486,
+      "n_dev": 489,
+      "n_test": 892,
+      "intents": 18,
+      "slot_labels": 214,
+      "bert": {
+        "intent_acc": 0.9932735426008968,
+        "slot_f1": 0.8160418482999128,
+        "train_secs": 354.9116806983948
+      },
+      "lstm": {
+        "intent_acc": 0.984304932735426,
+        "slot_f1": 0.8469908949589163,
+        "train_secs": 8.271195650100708
+      }
+    },
+    {
+      "lang": "zh",
+      "n_train": 4486,
+      "n_dev": 489,
+      "n_test": 892,
+      "intents": 18,
+      "slot_labels": 184,
+      "bert": {
+        "intent_acc": 0.9786995515695067,
+        "slot_f1": 0.8033126293995859,
+        "train_secs": 731.693281173706
+      },
+      "lstm": {
+        "intent_acc": 0.9674887892376681,
+        "slot_f1": 0.7534740092640247,
+        "train_secs": 29.035794019699097
+      }
+    },
+    {
+      "lang": "ja",
+      "n_train": 4486,
+      "n_dev": 489,
+      "n_test": 892,
+      "intents": 18,
+      "slot_labels": 218,
+      "bert": {
+        "intent_acc": 0.9573991031390134,
+        "slot_f1": 0.6220682302771855,
+        "train_secs": 864.1236608028412
+      },
+      "lstm": {
+        "intent_acc": 0.9417040358744395,
+        "slot_f1": 0.49470499243570343,
+        "train_secs": 29.70008134841919
+      }
+    },
+    {
+      "lang": "hi",
+      "n_train": 1440,
+      "n_dev": 160,
+      "n_test": 886,
+      "intents": 17,
+      "slot_labels": 178,
+      "bert": {
+        "intent_acc": 0.9413092550790068,
+        "slot_f1": 0.6912686927158708,
+        "train_secs": 141.11210203170776
+      },
+      "lstm": {
+        "intent_acc": 0.8781038374717833,
+        "slot_f1": 0.649343544857768,
+        "train_secs": 3.104032039642334
+      }
+    },
+    {
+      "lang": "tr",
+      "n_train": 578,
+      "n_dev": 60,
+      "n_test": 715,
+      "intents": 16,
+      "slot_labels": 160,
+      "bert": {
+        "intent_acc": 0.8881118881118881,
+        "slot_f1": 0.5734632683658171,
+        "train_secs": 58.37922811508179
+      },
+      "lstm": {
+        "intent_acc": 0.7272727272727273,
+        "slot_f1": 0.4490161001788908,
+        "train_secs": 1.7561874389648438
+      }
+    }
+  ],
+  "config": {
+    "languages": [
+      "pt",
+      "de",
+      "fr",
+      "zh",
+      "ja",
+      "hi",
+      "tr"
+    ],
+    "models": [
+      "bert",
+      "lstm"
+    ],
+    "epochs": 20,
+    "seed": 42
+  }
+}
