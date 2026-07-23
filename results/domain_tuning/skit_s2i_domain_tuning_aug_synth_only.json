@@ -1,0 +1,40 @@
+{
+  "per_ratio": [
+    {
+      "ratio": 0.0,
+      "real_added": 0,
+      "synth_used": 10528,
+      "n_train": 10528,
+      "n_test": 1400,
+      "test_intent_acc": 0.6085714285714285,
+      "train_secs": 4274.6904296875,
+      "aug_enabled": true
+    }
+  ],
+  "config": {
+    "ratios": [
+      0.0
+    ],
+    "epochs": 10,
+    "batch_size": 16,
+    "lr": 0.0001,
+    "seed": 42,
+    "backbone": "tiny.en",
+    "skip_real_only": true,
+    "no_aug": false,
+    "out_suffix": "_aug_synth_only"
+  },
+  "aug_enabled": true,
+  "aug_params": {
+    "speed_factors": [
+      1.0,
+      1.0,
+      0.9,
+      1.1
+    ],
+    "time_mask_num": 2,
+    "time_mask_max": 20,
+    "freq_mask_num": 2,
+    "freq_mask_max": 15
+  }
+}

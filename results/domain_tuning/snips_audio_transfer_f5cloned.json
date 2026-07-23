@@ -1,0 +1,40 @@
+{
+  "per_ratio": [
+    {
+      "ratio": 0.0,
+      "real_added": 0,
+      "synth_used": 1765,
+      "n_train": 1765,
+      "n_test": 353,
+      "test_intent_acc": 0.7422096317280453,
+      "train_secs": 472.55336332321167
+    },
+    {
+      "ratio": 0.25,
+      "real_added": 353,
+      "synth_used": 1765,
+      "n_train": 2118,
+      "n_test": 353,
+      "test_intent_acc": 0.7818696883852692,
+      "train_secs": 606.1846013069153
+    },
+    {
+      "ratio": 1.0,
+      "real_added": 1412,
+      "synth_used": 1765,
+      "n_train": 3177,
+      "n_test": 353,
+      "test_intent_acc": 0.8838526912181303,
+      "train_secs": 898.1479773521423
+    }
+  ],
+  "config": {
+    "epochs": 10,
+    "lr": 0.0001,
+    "seed": 42,
+    "backbone": "tiny.en",
+    "n_synth": 1765,
+    "n_real_train": 1412,
+    "n_real_test": 353
+  }
+}

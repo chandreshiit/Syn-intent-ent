@@ -1,0 +1,28 @@
+{
+  "per_ratio": [
+    {
+      "ratio": 0.0,
+      "real_added": 0,
+      "synth_used": 1809,
+      "n_train": 1809,
+      "n_test": 353,
+      "intent_accuracy": 0.830028328611898,
+      "slot_micro_f1": 0.8388157894736842,
+      "slot_micro_p": 0.9340659340659341,
+      "slot_micro_r": 0.7611940298507462,
+      "train_secs": 11.107470035552979,
+      "eval_secs": 1.578603982925415
+    }
+  ],
+  "config": {
+    "seed": 42,
+    "ratios": [
+      0.0
+    ],
+    "real_dataset": "data/snips_real_close/dataset.json",
+    "synth_dataset": "data/snips_family_ablation/indirect/dataset.json",
+    "n_real_train": 1412,
+    "n_real_test": 353,
+    "n_synth": 1809
+  }
+}

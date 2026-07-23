@@ -1,0 +1,7346 @@
+{
+  "per_utt": [
+    {
+      "text": "put the lights in the office on green",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "office"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "office"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Set lights to twenty two percent in the basement",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I'd like the vestibule lighting to be at thirty nine",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "thirty nine"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "vestibule"
+        ],
+        [
+          "brightness",
+          "thirty nine"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Set all lamps to two in the laundry room.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "turn the garden lights to brightness two please",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two please"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "two"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "two please"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Add more lighting in the basement",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Is there a way to turn the kitchen lights to red?",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I'm in the kitchen can you give me some lights please",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "kitchen"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "green lights on in living room",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "living room"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "room",
+          "room"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Boost the brightness of the lights.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "please the increase the brightness, it's too dark",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please turn up the lighting in the toilets.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights on pink",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you turn off the lights for the laundry room?",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "laundry room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn off the lights in this room.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [
+        [
+          "room",
+          "room"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "decrease brightness in the basement",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want the light in the lounge to turn on",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Help me turn the light on",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Decrease the light intensity in the entrance to zero",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "entrance"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "entrance"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Color the lights red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn off all the lamps.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you increase the brightness?",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you turn off the light in the toilet",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilet"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilet"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Adjust the lights so it's less bright",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "lower the brightness",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn studio lights on",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "studio"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "studio"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "decrease the light in the small meeting room",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "small meeting room"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "small meeting room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Be sure the light intensity is set to twelve percent",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "brightness",
+          "twelve"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "I want the room brighter",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "the bedroom lights need to glow red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Would you please turn on the lights in my cubicle",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Help me make the light brighter",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please turn the lights down in the waiting room",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "waiting room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "waiting room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want the lounge light on",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Find the bulbs for the cellar and turn them up",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "cellar"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Help me turn on the light please",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want the lighting increased",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Increase the lighting in the vestibule",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights up in the studio.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "studio"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "studio"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please change the colors to red in the bathroom",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I need more light here",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Make the lights more bright in the bedroom",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please change the color of the lights red.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want to change the light to blue instead.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "can you turn off the kids bedroom lights?",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Set living room bright level to twenty two",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "living room"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "room",
+          "room"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Please switch on lights for the facilities",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "facilities"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "facilities"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn off the lights in the toilets",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Switch on the studio light",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "studio"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "studio"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "increase the brightness of the garage",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garage"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garage"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please get the lights off.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "change the light to pink",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Have the kitchen lights at lower brightness",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the light red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Dim the lights in the bathroom",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want to make the light dimmer",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn on the spotlight in the room",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I'd like the lights to be shutdown",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Switch off the lights",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Set the lights to a lower intensity",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights red in the bed room.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the brightness down in the living room",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please turn up lights in appartment",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "appartment"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "appartment"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Color change lights to red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I need it to be brighter in the cubicle",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "cubicle"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "make all lights pink in color",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn down the lights",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "please switch color of all lights to green",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "in the backyard the lights need to be pink",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "backyard"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "backyard"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "select green light",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Switch off the lights after we leave for the trip",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please increase the lights in the office",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "office"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "office"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "turn bathroom lights up",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "bathroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Make the lounge twenty two",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "i need to brighten up the meeting room",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "meeting room"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "meeting room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Activate the toilets lights.",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Set brightness to twenty please.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty please"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "twenty"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "twenty please"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn on the bathroom lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "living room lights off",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "living room"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "room",
+          "room"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "lounge lights on please",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "lounge"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "I want the vestibule to shine at twelve percent",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve percent"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "twelve"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "twelve percent"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Put the cellar lights to off",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "In the entrance change the colors to red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "entrance"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "entrance"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "bring up the lights",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Set the brightness in the bed room to twenty two.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Decrease the light intensity to zero",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Set the brightness to twelve.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "turn on the lights urgently",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Set the bed room lights to two for brightness.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Lessen the brightness of the lights in the bed room.",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the lights in the bed room less bright",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "bed room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn off the lights now",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn off the light power",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn backyard lights off",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "backyard"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "backyard"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "the light is too bright so turn it down",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Make the cubicle light green",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Dim the lights please",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please turn off the lights in this room.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [
+        [
+          "room",
+          "room"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn the lights to a higher setting",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "its pretty bright in here, is there a possibility you can turn the lights down",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Place the cellar lights in the off postion",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Lower the lights in the dining room.",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "dining room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "dining room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want the brightness of the lights in the laundry room to be fifty.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "fifty."
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "fifty"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "fifty."
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "fifty"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "adjust brightness of lounge lights to a value of twenty two",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Increase the lighting intensity",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want red lights please",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Would you switch my kitchen lighting to on?",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "End the lights from shining in the cubicle",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "cubicle"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "please dim the lights",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn off the lounge lights.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights in the garden off.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Put on the lights in the cella at two percent",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cella"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "cella"
+        ],
+        [
+          "brightness",
+          "two"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "In the entrance make the lights pink",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "entrance"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "entrance"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I'd like for the lights to be blue.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Put bathroom brightness to fifty",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "fifty"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "fifty"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "bathroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Brightness should be set to twelve percent",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve percent"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "twelve"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "twelve percent"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn down the lights in the toilets room",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets room"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "toilets room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "I would like the lights turned off.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please make the flat room blue",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "flat room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "flat room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Could you turn down the bed room lights?",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Decrease the light intensity",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "please turn lights on",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights off in the dining room",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "dining room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "dining room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "hey brighten the bedroom",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Change lights to red.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Click on the lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I'd like the lights off in the vestibule",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you make it dimmer in here",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "make all kids room lights red colored",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "kids room"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "room",
+          "room"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Please dim lights",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Ok google, Turn off lights in entire flat",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "entire flat"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "entire flat"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "some light in the kitchen",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Adjust the glow of the bulb to level two",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights on in the meeting room",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "meeting room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "meeting room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Increase the lighting in the cubicle",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I'd like to activate lights in my cubicle",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "cubicle"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Switch on my garden lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I think the lights should be on by now",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "I don't want the lights on in the cella anymore",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cella"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "cella"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn up the lighting",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want to change the light green",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the lights less bright",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Make the lights brighter",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Put parking lights at level twelve",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "parking"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "parking"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Get the living room lights on please",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "turn on the lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you change the light in the garden to pink",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "The light needs to be dimmed",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Decrease the lighting so it's not so bright",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Kill the bathroom lights.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "bathroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Make the lights in the toilets brighter",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the light bulbs pink",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want the lights off in the meeting room",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "meeting room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "meeting room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please increase lights.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights to a lower setting",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Adjust the changing room intensity of the lighting to two percent",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "changing room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "changing room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two percent"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "two"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "two percent"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Please make the color red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the cellar lights to fifty percent",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "fifty"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "fifty percent"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "fifty"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "fifty percent"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn down the brightness please",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "It's too dark in here. Brighten the lights a bit.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Decrease the light intensity in the vestibule to zero",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "vestibule"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Set the lights in the laundry room to level two",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want the house lights to be pink.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "house"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "house"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Change the light color to pink please",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the lighting brighter in here.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn down the lights in the bedroom",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I need pink lighting in the office.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "office"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "office"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Set the brightness of the light bulbs to fifty.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "fifty"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "fifty"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want lights on please",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Switch the toilet light to red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilet"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilet"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "It's too dark in the waiting room",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "waiting room"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "waiting room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Is is possible to turn down the brightness?",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "switch the garage light to  pink",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garage"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garage"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I don't want the bedroom to be so bright",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "bedroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Set lights to two in the parking room please",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "parking room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "parking"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "parking room"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "room",
+          "parking"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Increase the brightness of the lights.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "dim the lights in the garden",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Increase the intensity of the lighting please",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Please turn off the toilets lights.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Change the laundry room lights to green.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the bedroom lights on",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the toilets green lights",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please turn off all the lights.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Change the brightness of the lights to twenty two percent",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two percent"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "twenty two"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "twenty two percent"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn on bed room lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "parking lights on please",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "parking"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "parking"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn the lights to two in the house",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "house"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "house"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights on above the toilets",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you decrease the brightness of the light bulbs?",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "The laundry room is too bright.",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "laundry room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Please turn off all lights.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the lights turn off",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights on please",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn off the lights in the bathroom",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Could you change the brightness of the lights on the patio to seventy-three?",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "patio"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "patio"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three?"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "seventy-three"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "seventy-three?"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "I need my bedroom lights lower.",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "bedroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Can you put lights on in the backyard?",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "backyard"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "backyard"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Switch off the garage lights.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garage"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garage"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "increase brightness in the lounge",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I would like the vestibule to be pink",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I need the lighting cranked up a little.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "set the intensity of the tubelight to two percent",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "brightness",
+          "two"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Can you turn on bathroom light",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "bathroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "turn it blue",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "The house room light needs to be changed to red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "house room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "house room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn on the lights in the entrance",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "entrance"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "entrance"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the lights in the kids bedroom green",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Is it possible to get the lounge brightness to five ?",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "five"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "five ?"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "five"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "five ?"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Make it more dim",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Set the lights in toilets to red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilets"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "toilets"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Change the parking room to green",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "parking room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "parking"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "parking room"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "room",
+          "parking"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Kill the lights in the bedroom.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "bedroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Please adjust the cubicle lights so it's brighter",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Adjust the pantry lighting to level thirty nine",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "pantry"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "thirty nine"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "pantry"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "thirty nine"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I need a brightness setting of twelve in the pantry.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "pantry"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "pantry"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I'd like the house lights to be set to twelve.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "house"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "house"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the light brighter.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "The garage lights need to be brighter",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garage"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garage"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights to a darker setting in the office",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "office"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "office"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "turn on the lights in the bathroom",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn off the lights",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the kids bedroom lights a twelve.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can we change the house lighting to twelve?",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "house"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "house"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve?"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "twelve"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "twelve?"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Please make the light red.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn off the patio lights.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "patio"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "patio"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "The brightness should be ten in a bathroom",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "ten"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "ten"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Adjust the brightness to seventy-three.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "The toilet lights should be blue.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilet"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "toilet"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please turn off the cellar lights.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "switch off vestibule lights off.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "vestibule"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "I want the lights off",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Set the brightness level of light to twenty",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "can you give me some lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Increase the brightness to seventy-three.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Let's lower the intensity of the lights",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn living room lights to red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you make it a tad brighter please?",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "I would like the lights less bright",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "I don't want there to be any light on in the office",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "office"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "office"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "please make the light blue",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn down the light in the loo.",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "loo"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "loo"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "laundry room lights to two",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "laundry room"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "room",
+          "room"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Dim the lights completely in the living room",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "living room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Are you able to change the lights to turn green?",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn down the lights in the basement.",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you set the brightness to seventy-three",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the waiting room lights to seventy-three",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "waiting room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "waiting room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Switch on the lights in the kids bedroom.",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you set the cella room to seventy-three",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cella room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cella"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "seventy-three"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "cella room"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "room",
+          "cella"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn up the lights in the kitchen",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I need you to turn the lights off in the basement",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Lower the brightness in the garden",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "The light in the shed needs to be off",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "shed"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "shed"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "put on the serial bulbs in the dining room",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "dining room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "dining room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Sir, please set the brightness of the connected light bulbs to fifty.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "fifty"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "fifty"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Decrease the brightness of the bulbs.",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "The lights in the cellar need to be turned up",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Dim lights please.",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "lights need brightened in the lounge",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "lounge"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "please give me lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Reduce the light brightness in the backyard to level ten.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "backyard"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "ten"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "backyard"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "ten"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Move the brightness setting in the dining room to five.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "dining room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "five"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "dining room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "five"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the color of the light red.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want the light color changed to red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want it less bright now",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "I want the light set to ten everywhere",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "ten"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "everywhere"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "ten"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "everywhere"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "It is too dark on the patio increase the lights.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "patio"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "patio"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Increase light brightness.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "turn on the garden lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Put lights at a higher intensity please",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "green lights in the living room",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        },
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn on the laundry room lighting",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "i want you to make the light dimmer",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "this entire appartment is in darkness, you need to turn the brightness up",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "entire appartment"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "entire appartment"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Help me make the entire appartment red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "entire appartment"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "entire appartment"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want living room lights to be changed to pink",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "living room"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "room",
+          "room"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Can you turn the cellar light on",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the kitchen brighter",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Shut down the kids bedroom lights.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "kids bedroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Set the patio lights to five.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "patio"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "five"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "patio"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "five"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I need my bedroom brighter now",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "bedroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Can you decrease the brightness",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "increase the brightness in the basement.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "In the lounge change it to level two",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights on in the appartment.",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "appartment"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "appartment"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please turn off the lighting",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Lower lighting in the backyard",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "backyard"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "backyard"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Lights on, now",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Change the lights into blue.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "blue"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please increase the garage lights.",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garage"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garage"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you darken the bedroom",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "bedroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Change the backyard light to green",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "backyard"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "backyard"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "green"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "please switch off the studio lights",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "studio"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "studio"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please switch the color of the light to be red please.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the kids bedroom brighter with more light",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "cut off the lights in vestibule",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "vestibule"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "vestibule"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn off the cellar lights",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want lighting in the bedroom",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "bedroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Set the laundry room lighting to ten percent",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "ten"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "ten percent"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "ten"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "ten percent"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "switch off laundry room lights",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the kids bedroom light red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the patio brighter",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "patio"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "patio"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Go ahead and turn the laundry room lights up brighter",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "laundry room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you stop the lighting?",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "please turn on the lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want more brightness in the changing room",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "changing room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "changing room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I would like the lounge light on",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "lounge"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I want this room at brightness level ten",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "ten"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "ten"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "I'd like the brightness set to twenty",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please set the light brightness level of basement to thirty nine",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "thirty nine"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "thirty nine"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "basement"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn the waiting room brightness to two",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "waiting room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "waiting room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the lights pink please.",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn the basement light intensity to ten",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "basement"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "ten"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "basement"
+        ],
+        [
+          "brightness",
+          "ten"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Set the brightness to twenty",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make the brightness of the lights to be at two percent",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "two percent"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "brightness",
+          "two"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "brightness",
+          "two percent"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Dim the lights please",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "take all lights off  as soon as possible",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Make the lights brighter",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Increase the lights in the bedroom",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bedroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "it's dark in here",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "in my kids room turn the lights off.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids room"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "kids room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "bathroom lights off",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "bathroom"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "its getting so dark in here, can you put the lights up",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Brighten up the cubicle",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cubicle"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "the office has too much light , it needs to be turned down",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "office"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "office"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Can you please brighten this room up a bit?",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "room"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Set the brightness to five.",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "five"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "brightness",
+          "raw_value": "five"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "the loo has too much lights",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "loo"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "loo"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Decrease the intensity of the lights in the kids bedroom",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids bedroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Dim the lights",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Set my bed room to twenty two for brightness",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twenty two"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Set the cellar light to twelve",
+      "gold_intent": "SetLightBrightness",
+      "pred_intent": "SetLightBrightness",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        },
+        {
+          "slot_name": "brightness",
+          "raw_value": "twelve"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Make certain no lights are on in the bathroom",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "patio lights please",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "patio"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "patio"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Make the lights less bright",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "illuminate cellar",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": null,
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "cellar"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [
+        [
+          "room",
+          "cellar"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "change bed room lighting to pink",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bed room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "bed room"
+        ]
+      ],
+      "slot_wrong": [
+        [
+          "room",
+          "room"
+        ]
+      ],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn down the brightness for me",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn on the changing room lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "changing room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "changing room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Turn off the lights in the bathroom",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Help me make it so the light is not so bright",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": null,
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": false,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "please dim the lights",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "I need the light in the kitchen",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Change the lighting to dim.",
+      "gold_intent": "DecreaseBrightness",
+      "pred_intent": "DecreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please turn on the living room lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "living room"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Ok google, turn off lights",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Can you change the kids room to red",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kids room"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "red"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Activate garden lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "garden"
+        }
+      ],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "garden"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Turn up the brightness",
+      "gold_intent": "IncreaseBrightness",
+      "pred_intent": "IncreaseBrightness",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "Please turn on the lights",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "turn all kitchen lights to pink color",
+      "gold_intent": "SetLightColor",
+      "pred_intent": "SetLightColor",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "kitchen"
+        },
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "color",
+          "raw_value": "pink"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [
+        [
+          "room",
+          "kitchen"
+        ]
+      ],
+      "slot_wrong": [],
+      "slot_correct_all": false
+    },
+    {
+      "text": "Shut off the lights please.",
+      "gold_intent": "SwitchLightOff",
+      "pred_intent": "SwitchLightOff",
+      "gold_slots": [],
+      "pred_slots": [],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    },
+    {
+      "text": "light on in the bathroom",
+      "gold_intent": "SwitchLightOn",
+      "pred_intent": "SwitchLightOn",
+      "gold_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "pred_slots": [
+        {
+          "slot_name": "room",
+          "raw_value": "bathroom"
+        }
+      ],
+      "intent_correct": true,
+      "slot_missed": [],
+      "slot_wrong": [],
+      "slot_correct_all": true
+    }
+  ],
+  "n_test": 353,
+  "n_intent_wrong": 61,
+  "n_slot_err": 83
+}
