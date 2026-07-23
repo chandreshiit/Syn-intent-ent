@@ -54,7 +54,7 @@ that agree at roughly 20x.
 
 ## Architecture Diagram
 
-![pipeline](Images/pipeline.png)
+![pipeline](Images/Pipeline.png)
 
 ## Benchmarks
 
