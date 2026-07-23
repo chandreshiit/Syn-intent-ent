@@ -1,0 +1,85 @@
+# ---------------------------------------------------------------------------
+# Environments and caches
+# ---------------------------------------------------------------------------
+.venv/
+.venv_*/
+venv/
+env/
+ENV/
+.hf_cache/
+.torch_cache/
+.pip_cache*/
+.tmp_*/
+.cache/
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Generated data and model artifacts
+#
+# Synthetic audio, corpora, and checkpoints are distributed separately (see
+# docs/DATA.md), not committed. Result JSONs under results/ ARE committed --
+# they are the evidence behind the paper's tables and are small.
+# ---------------------------------------------------------------------------
+data/
+generated_audio/
+generated_audio*/
+*.bak/
+checkpoints/
+wandb/
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+*.wav
+*.mp3
+*.flac
+*.parquet
+
+# ---------------------------------------------------------------------------
+# Archives
+# ---------------------------------------------------------------------------
+*.7z
+*.zip
+*.tar
+*.tar.gz
+
+# ---------------------------------------------------------------------------
+# Run logs
+#
+# Training transcripts are not reproducibility evidence and contain absolute
+# local paths. The JSON summaries in results/ carry the numbers.
+# ---------------------------------------------------------------------------
+*.log
+logs/
+
+# ---------------------------------------------------------------------------
+# Editor / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Secrets
+# ---------------------------------------------------------------------------
+.env
+*.key
+credentials.json

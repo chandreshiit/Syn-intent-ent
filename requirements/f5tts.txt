@@ -1,0 +1,21 @@
+# Isolated environment for F5-TTS voice cloning (pipelines/voice_cloning/).
+#
+# This MUST be a separate virtualenv. F5-TTS pins dependency versions that
+# conflict with requirements/base.txt, and installing both into one environment
+# breaks the Whisper experiments.
+#
+#   python -m venv .venv_f5tts
+#   .venv_f5tts/Scripts/activate      # Linux/macOS: source .venv_f5tts/bin/activate
+#   pip install torch==2.9.1 torchaudio==2.9.1 --index-url https://download.pytorch.org/whl/cu126
+#   pip install -r requirements/f5tts.txt
+#
+# Install the CUDA torch build FIRST. F5-TTS's own dependency resolution pulls
+# the CPU wheel by default, which makes full-corpus generation take days.
+
+f5-tts
+torch==2.9.1
+torchaudio==2.9.1
+soundfile==0.13.1
+librosa==0.11.0
+numpy==2.3.5
+tqdm==4.67.1
