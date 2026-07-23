@@ -1,0 +1,24 @@
+{
+  "languages": {
+    "en": {
+      "name": "English",
+      "family": "Indo-European",
+      "tokenization": "whitespace",
+      "full_resource": true,
+      "intents": 6,
+      "slots": 3,
+      "code": "en",
+      "mms_tts_code": "eng"
+    },
+    "fr": {
+      "name": "French",
+      "family": "Indo-European",
+      "tokenization": "whitespace",
+      "full_resource": true,
+      "intents": 6,
+      "slots": 3,
+      "code": "fr",
+      "mms_tts_code": "fra"
+    }
+  }
+}

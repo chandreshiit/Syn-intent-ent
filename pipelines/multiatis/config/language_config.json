@@ -1,0 +1,111 @@
+{
+  "languages": {
+    "en": {
+      "name": "English",
+      "family": "Indo-European",
+      "tokenization": "whitespace",
+      "full_resource": true,
+      "intents": 18,
+      "slots": 84,
+      "code": "en",
+      "mms_tts_code": "eng"
+    },
+    "es": {
+      "name": "Spanish",
+      "family": "Indo-European",
+      "tokenization": "whitespace",
+      "full_resource": true,
+      "intents": 18,
+      "slots": 84,
+      "code": "es",
+      "mms_tts_code": "spa"
+    },
+    "pt": {
+      "name": "Portuguese",
+      "family": "Indo-European",
+      "tokenization": "whitespace",
+      "full_resource": true,
+      "intents": 18,
+      "slots": 84,
+      "code": "pt",
+      "mms_tts_code": "por"
+    },
+    "de": {
+      "name": "German",
+      "family": "Indo-European",
+      "tokenization": "whitespace",
+      "full_resource": true,
+      "intents": 18,
+      "slots": 84,
+      "code": "de",
+      "mms_tts_code": "deu"
+    },
+    "fr": {
+      "name": "French",
+      "family": "Indo-European",
+      "tokenization": "whitespace",
+      "full_resource": true,
+      "intents": 18,
+      "slots": 84,
+      "code": "fr",
+      "mms_tts_code": "fra"
+    },
+    "zh": {
+      "name": "Chinese",
+      "family": "Sino-Tibetan",
+      "tokenization": "character",
+      "full_resource": true,
+      "intents": 18,
+      "slots": 84,
+      "code": "zh",
+      "mms_tts_code": "cmn"
+    },
+    "ja": {
+      "name": "Japanese",
+      "family": "Japonic",
+      "tokenization": "character",
+      "full_resource": true,
+      "intents": 18,
+      "slots": 84,
+      "code": "ja",
+      "mms_tts_code": "jpn"
+    },
+    "hi": {
+      "name": "Hindi",
+      "family": "Indo-European",
+      "tokenization": "whitespace",
+      "full_resource": false,
+      "intents": 17,
+      "slots": 75,
+      "code": "hi",
+      "mms_tts_code": "hin",
+      "downsample": {
+        "train": 1440,
+        "dev": 160,
+        "test": 893
+      },
+      "excluded_intent": "cheapest"
+    },
+    "tr": {
+      "name": "Turkish",
+      "family": "Altaic",
+      "tokenization": "whitespace",
+      "full_resource": false,
+      "intents": 17,
+      "slots": 71,
+      "code": "tr",
+      "mms_tts_code": "tur",
+      "downsample": {
+        "train": 578,
+        "dev": 60,
+        "test": 715
+      },
+      "excluded_intent": "cheapest"
+    }
+  },
+  "split_ratios": {
+    "train": 0.765,
+    "dev": 0.083,
+    "test": 0.152
+  }
+}
