@@ -1,0 +1,18 @@
+# Normalise line endings so the repo diffs cleanly across Windows, macOS, and
+# Linux. Contributors run this code on all three.
+* text=auto eol=lf
+
+*.py    text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+*.json  text eol=lf
+*.toml  text eol=lf
+*.cff   text eol=lf
+*.tex   text eol=lf
+*.csv   text eol=lf
+*.sh    text eol=lf
+
+*.wav   binary
+*.png   binary
+*.pdf   binary
+*.parquet binary

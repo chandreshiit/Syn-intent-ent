@@ -1,0 +1,22 @@
+# Isolated environment for the Snips NLU baseline (Tables 10, 11).
+#
+# The original SNIPS paper evaluated with the snips-nlu library (logistic-
+# regression intent classifier + CRF slot tagger). We reuse it unmodified so
+# our numbers are comparable to the published baseline rather than to a
+# reimplementation.
+#
+# snips-nlu 0.20.2 is the last release and requires Python 3.8 and numpy<1.20.
+# It cannot coexist with requirements/base.txt. On Windows we run it under WSL:
+#
+#   wsl
+#   python3.8 -m venv .venv_wsl
+#   source .venv_wsl/bin/activate
+#   pip install -r requirements/snipsnlu.txt
+#   python -m snips_nlu download en
+#
+# Scripts that need this environment say so in their module docstring.
+
+snips-nlu==0.20.2
+numpy<1.20
+scikit-learn==0.22.2.post1
+scipy<1.6
