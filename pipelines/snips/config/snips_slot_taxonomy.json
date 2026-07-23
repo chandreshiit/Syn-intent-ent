@@ -1,0 +1,64 @@
+{
+  "slot_types": {
+    "room": {
+      "kind": "custom",
+      "description": "Room or area where the lights are located",
+      "values": [
+        "basement", "office", "bathroom", "pantry", "vestibule", "studio",
+        "cubicle", "dining room", "changing room", "laundry room", "waiting room",
+        "kitchen", "living room", "bedroom", "entrance", "backyard",
+        "toilets", "shed", "kids bedroom", "garage", "parking", "garden", "patio",
+        "cellar", "everywhere", "boardroom", "large meeting room",
+        "small meeting room", "meeting room", "house", "flat", "appartment",
+        "child bedroom", "room"
+      ]
+    },
+    "color": {
+      "kind": "custom",
+      "description": "Color of the smart lights",
+      "values": ["green", "red", "blue"],
+      "synonyms": {"red": ["pink"]}
+    },
+    "brightness": {
+      "kind": "built_in",
+      "description": "Numeric brightness level (snips/number built-in entity)",
+      "word_values": [
+        "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+        "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
+        "seventeen", "eighteen", "nineteen", "twenty", "twenty one", "twenty two",
+        "twenty three", "twenty four", "twenty five", "thirty", "thirty two",
+        "thirty five", "forty", "forty five", "fifty", "sixty", "seventy", "eighty",
+        "ninety", "hundred"
+      ],
+      "digit_values": [
+        "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "15", "20", "25",
+        "30", "32", "35", "40", "45", "50", "60", "70", "80", "90", "100"
+      ],
+      "word_digit_mix_ratio": 0.5
+    }
+  },
+  "intent_counts": {
+    "DecreaseBrightness": 296,
+    "IncreaseBrightness": 296,
+    "SetLightBrightness": 296,
+    "SetLightColor": 300,
+    "SwitchLightOff": 299,
+    "SwitchLightOn": 278
+  },
+  "intent_slots": {
+    "DecreaseBrightness": ["room"],
+    "IncreaseBrightness": ["room"],
+    "SetLightBrightness": ["room", "brightness"],
+    "SetLightColor": ["room", "color"],
+    "SwitchLightOff": ["room"],
+    "SwitchLightOn": ["room"]
+  },
+  "intent_categories": {
+    "DecreaseBrightness": "Brightness Control",
+    "IncreaseBrightness": "Brightness Control",
+    "SetLightBrightness": "Brightness Control",
+    "SetLightColor": "Color Control",
+    "SwitchLightOff": "Light Switch",
+    "SwitchLightOn": "Light Switch"
+  }
+}
